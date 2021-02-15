@@ -12,13 +12,11 @@ nav {
 }
 
 #nav-links-container {
-  display: flex;
-  
+  display: flex !important;
 }
 
-
 #nav-links-container > a {
-  color: black;
+  color: black !important;
 }
 
 header {
