@@ -1,3 +1,50 @@
+@font-face {
+  font-family: "Segoe UI Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: "assets/fonts/SegoeUI.woff";
+}
+
 * {
-    font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: linear-gradient(180deg, lightgrey 0%, white 50%, lightgrey 100%);
+}
+
+header {
+  display: flex;
+  padding: 0px 5% 0 5%;
+  margin: 0px 0 20px 0;
+  height: 200px;
+  text-align: center;
+  color: black;
+}
+
+header > div {
+  margin: auto;
+}
+
+h1 {
+  margin: 10px 0 10px 0;
+}
+
+#main-container {
+  margin: 0px auto 0 auto;
+  padding: 10px;
+  width: min(1000px, 90%);
+  background-color: white;
+  border-radius: 1%;
+}
+
+section {
+  padding: 20px 2% 20px 2%;
+}
+
+section > h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.6em;
 }
