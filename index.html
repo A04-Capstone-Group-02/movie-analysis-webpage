@@ -2,6 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- HTML includes https://github.com/LexmarkWeb/csi.js -->
+    <script src="assets/js/csi.min.js"></script>
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -41,13 +44,12 @@
             View on GitHub
           </a>
           <a
-            class="btn btn-info"
+            class="btn btn-info disabled"
             style="color: white"
-            href="https://hub.docker.com/repository/docker/991231/movie-analysis"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View on DockerHub
+            Download the Report
           </a>
         </div>
       </div>
@@ -56,36 +58,31 @@
     <div id="main-container">
       <section id="introduction">
         <h2>Introduction</h2>
-        <!-- start of introduction -->
-        <p>WORK IN PROGRESS</p>
-        <!-- end of introduction -->
+        <div data-include="pages/introduction.html"></div>
       </section>
+      <hr class="my-3" />
       <section id="data">
         <h2>Data</h2>
-        <!-- start of data -->
-        <p>WORK IN PROGRESS</p>
-        <!-- end of data -->
+        <div data-include="pages/data.html"></div>
       </section>
+      <hr class="my-3" />
       <section id="eda">
         <h2>EDA</h2>
-        <!-- start of eda -->
-        <p>WORK IN PROGRESS</p>
-        <!-- end of eda -->
+        <div data-include="pages/eda.html"></div>
       </section>
+      <hr class="my-3" />
       <section id="classification">
         <h2>Classification</h2>
-        <!-- start of classification -->
-        <p>WORK IN PROGRESS</p>
-        <!-- end of classification -->
+        <div data-include="pages/classification.html"></div>
       </section>
+      <hr class="my-3" />
       <section id="clustering">
         <h2>Clustering</h2>
-        <!-- start of clustering -->
-        <p>WORK IN PROGRESS</p>
-        <!-- end of clustering -->
+        <div data-include="pages/clustering.html"></div>
       </section>
     </div>
   </body>
+  <!-- Bootstrap -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
