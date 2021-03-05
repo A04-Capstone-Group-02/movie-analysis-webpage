@@ -63,6 +63,45 @@ section > h2 {
 }
 
 img {
-  width: 100%;
-  padding: 8px 5% 8px 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.excerpt {
+  font-size: 75%;
+  font-style: italic;
+  margin: 30px 10%;
+}
+
+.excerpt mark {
+  background-color: rgba(255, 255, 0, .5);
+}
+
+.variables {
+  font-size: 85%;
+  margin: 30px 10%;
+}
+
+.variables td {
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+.variables thead {
+  border-bottom: solid thin;
+  font-weight: bold;
+}
+
+.variables > tbody td:nth-child(1) {
+  font-family: ui-monospace;
+  white-space: nowrap;
+}
+
+.variables > tbody td:nth-child(2) {
+  white-space: nowrap;
+}
+
+.variables > tbody td:nth-child(3) {
+  font-style: italic;
 }

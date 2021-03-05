@@ -1,14 +1,69 @@
 <body>
   <p>
-    Our dataset comes from the
-    <a
-      href="http://www.cs.cmu.edu/~ark/personas/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      CMU Movie Summary Corpus
-    </a>
-    . The dataset consists of movie plot summaries extracted from Wikipedia and
-    movie metadata extracted from Freebase.
+    We use the <a href="http://www.cs.cmu.edu/~ark/personas/">CMU Movie Summary Corpus</a> for our analysis, which consists of movie plot summaries extracted from Wikipedia and movie metadata extracted from Freebase.
+  </p>
+  <p>
+    The dataset contains around 42,000 movies from 1893 to 2014 as shown below.
+  </p>
+  <img src="assets/images/number_movies_per_year_bar_chart.png" class="center" width="600">
+  <p>
+    After some data processing, we get the variables below.
+  </p>
+  <table class="variables">
+    <thead>
+      <tr>
+          <td>Variable</td>
+          <td>Description</td>
+          <td>Example</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>name</td>
+          <td>Movie name</td>
+          <td>Star Wars Episode IV: A New Hope</td>
+      </tr>
+      <tr>
+          <td>date</td>
+          <td>Movie release date</td>
+          <td>1977-05-25</td>
+      </tr>
+      <tr>
+          <td>revenue</td>
+          <td>Movie box office revenue (USD)</td>
+          <td>755,398,887</td>
+      </tr>
+      <tr>
+          <td>runtime</td>
+          <td>Movie runtime (minutes)</td>
+          <td>122</td>
+      </tr>
+      <tr>
+          <td>languages</td>
+          <td>Movie languages</td>
+          <td>{English}</td>
+      </tr>
+      <tr>
+          <td>countries</td>
+          <td>Movie countries</td>
+          <td>{United States of America}</td>
+      </tr>
+      <tr>
+          <td>genres</td>
+          <td>Movie genres</td>
+          <td>Action, Adventure, Coming-of-age, Family, Fantasy, Science Fiction, Space western}</td>
+      </tr>
+      <tr>
+          <td>summary</td>
+          <td>Movie plot summary</td>
+          <td>The film begins with an opening crawl explaining that the galaxy is in a state of civil war and that spies for the Rebel Alliance have ...</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Although movies can come from different countries and may be in different languages, all of the movie plot summaries are in English (as the dataset is extracted from English Wikipedia).
+  </p>
+  <p>
+    The variable of focus here is <span style="font-family:ui-monospace">summary</span>, from which we extract key phrases to drive our analysis.
   </p>
 </body>
