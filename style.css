@@ -94,7 +94,6 @@ img {
 }
 
 .variables > tbody td:nth-child(1) {
-  font-family: ui-monospace;
   white-space: nowrap;
 }
 
