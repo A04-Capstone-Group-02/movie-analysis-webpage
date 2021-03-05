@@ -1,5 +1,6 @@
 <body>
     <p>We perform an EDA to discover how human culture and events have progressed over time. Here, we use statistical signals, i.e., tf-idf, to identify when certain phrases (corresponding to discrete entities of human culture and events) are popular and relevant.</p>
+    <img src="assets/images/history_timeline.png" width="450">
     <p>We use tf-idf to measure a phrase's relevance in time where each phrase is a term and each period of time (e.g. a year or decade) is a document. We use sublinear term frequency (tf) scaling to reduce the significance of very common phrases (e.g. "film", "life") that are uninformative in our analysis. Given a tf-idf vector for each period of time, we then normalize each tf-idf vector to have a Euclidean norm of 1.</p>
     <p>Applying tf-idf to phrases in this way provides us with a method to rank phrases by their relevance for each time period. We define "top" phrases as the phrases with the highest tf-idf values for the corresponding period of time.</p>
     <p>We show the top phrases by decade below. To provide context, we annotate each phrase with the name and year of the highest-grossing movie out of all movies that contain that phrase in that decade.</p>
@@ -20,4 +21,8 @@
             <li><b>2010s</b>: We come to the most recent decade in the dataset. "Heart attack" continues to be the top phrase in this decade. We continue to see technologies that are relevant to consumers in this time period, namely "Facebook" and "internet". Indian cinema continues its presence with the appearance of actor N. Santhanam in <i>Thillalangadi</i> and the reappearance of Sneha in <i>Theeradha Vilaiyattu Pillai</i>.</li>
         </ul>
     </p>
+    <p>
+        We also provide an animated bar chart race of the top phrases by year, rather than decade, below.
+    </p>
+    <iframe src="https://www.youtube.com/embed/8aOob6iJO5Y" width="480" height="280"></iframe>
 </body>
