@@ -63,10 +63,15 @@ section > h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 21px;
 }
 
-iframe, img {
+h4 {
+  font-size: 18px;
+}
+
+iframe,
+img {
   display: block;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -81,7 +86,7 @@ iframe, img {
 }
 
 .excerpt mark {
-  background-color: rgba(255, 255, 0, .5);
+  background-color: rgba(255, 255, 0, 0.5);
 }
 
 .variables {
